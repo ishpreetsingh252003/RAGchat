@@ -34,7 +34,7 @@ retrieve = _retriever.retrieve
 INDEX_MANIFEST = ROOT / "phases" / "phase_1" / "ingestion" / "subphase-1.7" / "output" / "index_build_manifest.json"
 
 MAX_SENTENCES = 3
-MIN_BM25_SCORE = 0.25
+MIN_BM25_SCORE = 0.0
 RETRIEVAL_K = 5
 
 # Do not encourage or process PII in queries
@@ -120,14 +120,35 @@ def _init_gemini() -> None:
     _get_client()
 
 
-def _synthesize_with_groq(query: str, context: str, citation_url: str) -> list[str]:
+def _synthesize_with_groq(query: str, context: str, citation_url: str, is_general_topic: bool = False) -> list[str]:
     """
     Use Groq to synthesize an answer from retrieved context.
     Enforces facts-only, 3-sentence limit, and citation accuracy.
     """
     client = _get_client()
     
-    prompt = f"""You are a helpful and friendly mutual fund chatbot. Your goal is to explain facts about mutual funds simply so that even a beginner can understand.
+    if is_general_topic:
+        # General topic - provide educational/generic answer
+        prompt = f"""You are a helpful and friendly mutual fund chatbot. Your goal is to explain facts about mutual funds simply so that even a beginner can understand.
+
+Context (from educational sources):
+{context}
+
+User Question: {query}
+
+Rules for your response:
+1. Answer using ONLY the information in the provided context.
+2. Provide a GENERAL educational answer about the topic (e.g., "An expense ratio is...").
+3. Do NOT mention any specific fund names, scheme names, or fund-specific details.
+4. Maximum 3 sentences.
+5. Use simple language and avoid complex jargon. If you must use a technical term, explain it briefly.
+6. Facts only - never give investment advice or say if a fund is "good" or "bad".
+7. If the context doesn't have the answer, provide a general explanation based on your knowledge.
+
+Answer:"""
+    else:
+        # Fund-specific question
+        prompt = f"""You are a helpful and friendly mutual fund chatbot. Your goal is to explain facts about mutual funds simply so that even a beginner can understand.
 
 Context:
 {context}
@@ -204,14 +225,15 @@ def synthesize(query: str, k: int = RETRIEVAL_K) -> dict[str, Any]:
     filter_mode = detected.get("filter_mode")
     scheme_detected = detected.get("scheme_id")
 
-    # Broad web crawl / no entity: do not invent a citation from arbitrary corpus hits
-    if filter_mode == "none" and scheme_detected is None:
+    # Allow general topic questions if section is detected, only refuse if no scheme AND no section
+    section_detected = detected.get("section")
+    if filter_mode == "none" and scheme_detected is None and section_detected is None:
         return {
             "grounded": False,
             "reason": "no_entity_or_topic_anchor",
             "answer_sentences": [
                 "I cannot answer this from the in-scope fund sources without a clearer question.",
-                "Include the fund name (for example an HDFC scheme in this project) and the fact you want (exit load, minimum SIP, benchmark). No source link is provided.",
+                "Ask about a specific topic like expense ratio, exit load, SIP, or ELSS, or include a fund name for detailed information.",
             ],
             "citation_url": None,
             "footer": None,
@@ -234,10 +256,17 @@ def synthesize(query: str, k: int = RETRIEVAL_K) -> dict[str, Any]:
     # Initialize Groq for answer synthesis
     _init_gemini()
     
-    # Use Groq to synthesize answer from context
-    sentences = _synthesize_with_groq(query, text, meta.get("source_url", ""))
+    # For general topic questions (no specific scheme), use educational context
+    is_general_topic = scheme_detected is None and section_detected is not None
     
-    citation = meta.get("source_url")
+    # Use Groq to synthesize answer from context
+    sentences = _synthesize_with_groq(query, text, meta.get("source_url", ""), is_general_topic)
+    
+    # For general topics, use educational citation instead of fund-specific URL
+    if is_general_topic:
+        citation = "https://www.amfiindia.com/investor-corner/knowledge-center/introduction-to-mutual-funds.html"
+    else:
+        citation = meta.get("source_url")
     if not citation or not isinstance(citation, str):
         return {
             "grounded": False,

@@ -9,9 +9,7 @@ import {
   AlertTriangle,
   ExternalLink,
   History,
-  BarChart3,
   ArrowLeftRight,
-  Settings,
   HelpCircle,
   LogOut,
   Sparkles,
@@ -36,11 +34,9 @@ const EXAMPLE_QUESTIONS = [
 ];
 
 const SIDEBAR_ITEMS = [
-  { icon: MessageSquare, label: "New Chat", active: true },
-  { icon: History, label: "Chat History" },
-  { icon: BarChart3, label: "Saved Analytics" },
+  { icon: MessageSquare, label: "New Chat", active: true, onClick: "newChat" },
+  { icon: History, label: "Chat History", onClick: "chatHistory" },
   { icon: ArrowLeftRight, label: "Compare Funds" },
-  { icon: Settings, label: "Settings" },
 ];
 
 export default function Home() {
@@ -143,6 +139,13 @@ export default function Home() {
           {SIDEBAR_ITEMS.map((item) => (
             <button
               key={item.label}
+              onClick={() => {
+                if (item.onClick === "newChat") {
+                  setMessages([]);
+                } else if (item.onClick === "chatHistory") {
+                  alert("Chat history feature coming soon!");
+                }
+              }}
               className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                 item.active
                   ? "bg-surface-container-high text-on-surface"
@@ -199,10 +202,10 @@ export default function Home() {
             <button className="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors">
               <HelpCircle className="w-5 h-5" />
             </button>
-            <button className="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors">
-              <Settings className="w-5 h-5" />
-            </button>
-            <button className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald hover:bg-emerald/90 text-surface-container-lowest text-sm font-medium transition-colors">
+            <button
+              onClick={() => setMessages([])}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald hover:bg-emerald/90 text-surface-container-lowest text-sm font-medium transition-colors"
+            >
               <Sparkles className="w-4 h-4" />
               New Chat
             </button>
