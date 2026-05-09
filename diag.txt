@@ -1,0 +1,15 @@
+﻿python :   File "<string>", line 1
+At line:1 char:1
++ python -c "import traceback; try: 
+exec(open('phases/phase_1/ingestion ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  File "<string> 
+   ", line 1:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    import traceback; try: exec(open('phases/phase_1/ingestion
+/subphase-1.6/embed_chunks.py').read()); except Exception as 
+e: traceback.print_exc()
+                      ^^^
+SyntaxError: invalid syntax

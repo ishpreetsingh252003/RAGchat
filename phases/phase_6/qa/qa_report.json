@@ -1,0 +1,50 @@
+{
+  "passed": 11,
+  "failed": 0,
+  "details": [
+    {
+      "id": "GQ1",
+      "status": "PASS"
+    },
+    {
+      "id": "GQ2",
+      "status": "PASS"
+    },
+    {
+      "id": "GQ3",
+      "status": "PASS"
+    },
+    {
+      "id": "GQ4",
+      "status": "PASS"
+    },
+    {
+      "id": "GQ5",
+      "status": "PASS"
+    },
+    {
+      "id": "GQ6",
+      "status": "PASS"
+    },
+    {
+      "id": "RC1",
+      "status": "PASS"
+    },
+    {
+      "id": "RC2",
+      "status": "PASS"
+    },
+    {
+      "id": "RC3",
+      "status": "PASS"
+    },
+    {
+      "id": "RC4",
+      "status": "PASS"
+    },
+    {
+      "id": "MC1",
+      "status": "PASS"
+    }
+  ]
+}

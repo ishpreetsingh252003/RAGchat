@@ -1,0 +1,22 @@
+{
+  "description": "Pre-approved educational links for refusal responses (facts-only / no advice).",
+  "links": [
+    {
+      "id": "amfi_investor_hub",
+      "label": "AMFI Investor portal",
+      "url": "https://www.amfiindia.com/investor"
+    },
+    {
+      "id": "amfi_intro_to_mf",
+      "label": "AMFI — Introduction to Mutual Funds",
+      "url": "https://www.amfiindia.com/investor-corner/knowledge-center/introduction-to-mutual-funds.html"
+    },
+    {
+      "id": "sebi_investor_education_material",
+      "label": "SEBI Investor — Reading material",
+      "url": "https://investor.sebi.gov.in/iematerial.html"
+    }
+  ],
+  "selection_rule": "Return exactly one educational link in a refusal; prefer AMFI for mutual-fund basics, SEBI for investor protection/regulatory guidance."
+}
+

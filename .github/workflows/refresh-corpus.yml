@@ -1,0 +1,49 @@
+name: Refresh Mutual Fund Corpus
+
+on:
+  schedule:
+    # Run daily at 4:30 AM UTC (10:00 AM IST)
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+    # Allow manual triggers for urgent updates
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Run ingestion pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          # Sequence matches the architecture plan
+          python phases/phase_1/ingestion/subphase-1.1/validate_corpus.py
+          python phases/phase_1/ingestion/subphase-1.2/fetch_snapshots.py
+          python phases/phase_1/ingestion/subphase-1.3/parse_snapshots.py
+          python phases/phase_1/ingestion/subphase-1.4/normalize_text.py
+          python phases/phase_1/ingestion/subphase-1.5/chunk_documents.py
+          python phases/phase_1/ingestion/subphase-1.6/embed_chunks.py
+          python phases/phase_1/ingestion/subphase-1.7/upsert_index.py
+          
+      - name: Commit updated artifacts
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add phases/phase_1/ingestion/subphase-*/output/
+          git commit -m "Auto-update corpus and index $(date '+%Y-%m-%d')" || exit 0
+          git push

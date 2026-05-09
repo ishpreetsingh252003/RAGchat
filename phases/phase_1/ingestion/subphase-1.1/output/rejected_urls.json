@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "generated_at": "2026-05-09",
+    "inputs": {
+      "manifest": "phase_0\\corpus\\manifest.json",
+      "schemes": "phase_0\\corpus\\schemes.json",
+      "whitelist": "phase_0\\corpus\\whitelist.json"
+    },
+    "counts": {
+      "candidates_total": 13,
+      "accepted_unique": 8,
+      "rejected": 0
+    },
+    "scope_checks": {
+      "anchor_urls_not_in_schemes": [],
+      "scheme_urls_not_in_anchor_urls": [],
+      "note": "In Phase 0, anchors and scheme groww URLs should typically match 1:1."
+    }
+  },
+  "rejections": []
+}

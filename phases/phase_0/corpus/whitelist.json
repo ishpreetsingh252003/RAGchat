@@ -1,0 +1,28 @@
+{
+  "description": "Allowed hosts/patterns for ingestion and citations (Phase 0). Reject everything else.",
+  "hosts": [
+    "groww.in",
+    "www.hdfcfund.com",
+    "files.hdfcfund.com",
+    "www.amfiindia.com",
+    "amfiindia.com",
+    "investor.sebi.gov.in",
+    "www.sebi.gov.in",
+    "sebi.gov.in"
+  ],
+  "allowed_url_prefixes": [
+    "https://groww.in/mutual-funds/",
+    "https://www.hdfcfund.com/",
+    "https://files.hdfcfund.com/",
+    "https://www.amfiindia.com/",
+    "https://amfiindia.com/",
+    "https://investor.sebi.gov.in/",
+    "https://www.sebi.gov.in/",
+    "https://sebi.gov.in/"
+  ],
+  "notes": [
+    "Keep this list small and review every change.",
+    "If an allowed URL redirects to a different host, re-check the final host against this list."
+  ]
+}
+

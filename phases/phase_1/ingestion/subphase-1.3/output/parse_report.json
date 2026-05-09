@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-05-09T10:32:32+00:00",
+  "source_snapshot_index": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshot_index.json",
+  "counts": {
+    "total": 8,
+    "ok": 8,
+    "failed": 0
+  },
+  "entries": [
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "url_id": "b5ddfac419d1bd80eb5ccfa4",
+      "snapshot_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshots\\b5ddfac419d1bd80eb5ccfa4.html",
+      "parsed_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parsed\\b5ddfac419d1bd80eb5ccfa4.txt",
+      "ok": true,
+      "doc_type": "html",
+      "extracted_chars": 17956,
+      "flags": [],
+      "error": null
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "url_id": "2582725fc091dfbcf708ea93",
+      "snapshot_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshots\\2582725fc091dfbcf708ea93.html",
+      "parsed_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parsed\\2582725fc091dfbcf708ea93.txt",
+      "ok": true,
+      "doc_type": "html",
+      "extracted_chars": 18253,
+      "flags": [],
+      "error": null
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "url_id": "8273f9c8d9b86569206eb0f9",
+      "snapshot_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshots\\8273f9c8d9b86569206eb0f9.html",
+      "parsed_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parsed\\8273f9c8d9b86569206eb0f9.txt",
+      "ok": true,
+      "doc_type": "html",
+      "extracted_chars": 16990,
+      "flags": [],
+      "error": null
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "url_id": "eb012e88a1ea9416b3f49103",
+      "snapshot_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshots\\eb012e88a1ea9416b3f49103.html",
+      "parsed_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parsed\\eb012e88a1ea9416b3f49103.txt",
+      "ok": true,
+      "doc_type": "html",
+      "extracted_chars": 17656,
+      "flags": [],
+      "error": null
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "url_id": "26c6518ff8f98713189d452a",
+      "snapshot_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshots\\26c6518ff8f98713189d452a.html",
+      "parsed_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parsed\\26c6518ff8f98713189d452a.txt",
+      "ok": true,
+      "doc_type": "html",
+      "extracted_chars": 19056,
+      "flags": [],
+      "error": null
+    },
+    {
+      "url": "https://investor.sebi.gov.in/iematerial.html",
+      "url_id": "52879f31f8d17d56bcb1e643",
+      "snapshot_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshots\\52879f31f8d17d56bcb1e643.html",
+      "parsed_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parsed\\52879f31f8d17d56bcb1e643.txt",
+      "ok": true,
+      "doc_type": "html",
+      "extracted_chars": 3860,
+      "flags": [],
+      "error": null
+    },
+    {
+      "url": "https://www.amfiindia.com/investor",
+      "url_id": "0cb0743d2fa8183888165408",
+      "snapshot_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshots\\0cb0743d2fa8183888165408.html",
+      "parsed_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parsed\\0cb0743d2fa8183888165408.txt",
+      "ok": true,
+      "doc_type": "html",
+      "extracted_chars": 4276,
+      "flags": [],
+      "error": null
+    },
+    {
+      "url": "https://www.hdfcfund.com/investor-services/factsheets",
+      "url_id": "73483eb8e94e5ec44b73c00e",
+      "snapshot_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshots\\73483eb8e94e5ec44b73c00e.html",
+      "parsed_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parsed\\73483eb8e94e5ec44b73c00e.txt",
+      "ok": true,
+      "doc_type": "html",
+      "extracted_chars": 4407,
+      "flags": [],
+      "error": null
+    }
+  ]
+}

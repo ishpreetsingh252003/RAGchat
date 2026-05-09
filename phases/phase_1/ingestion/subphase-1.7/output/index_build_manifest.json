@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-05-09T11:18:59+00:00",
+  "index_version": "index_v1",
+  "index_dir": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.7\\output\\index_v1",
+  "embedder": {
+    "id": "gemini-embedding-001",
+    "type": "gemini_embedding",
+    "dimensions": 3072,
+    "model": "models/embedding-001",
+    "notes": "Google Gemini embedding model for semantic understanding and improved retrieval quality."
+  },
+  "counts": {
+    "chunks": 69,
+    "documents": 8
+  },
+  "freshness": {
+    "max_fetched_at_utc": "2026-05-09T10:32:15+00:00",
+    "footer_date_suggestion": "2026-05-09"
+  },
+  "inputs": {
+    "chunk_index": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.5\\output\\chunk_index.json",
+    "embeddings_jsonl": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.6\\output\\embeddings\\embeddings.jsonl",
+    "embed_manifest": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.6\\output\\embed_manifest.json"
+  },
+  "storage": {
+    "chroma": {
+      "persist_dir": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.7\\output\\index_v1\\chroma",
+      "message": "chroma_upsert_ok(count=69)",
+      "collection": "mutual_fund_faq_chunks"
+    }
+  }
+}

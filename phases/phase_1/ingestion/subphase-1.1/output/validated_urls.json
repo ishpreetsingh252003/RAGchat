@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "generated_at": "2026-05-09",
+    "inputs": {
+      "manifest": "phase_0\\corpus\\manifest.json",
+      "schemes": "phase_0\\corpus\\schemes.json",
+      "whitelist": "phase_0\\corpus\\whitelist.json"
+    },
+    "counts": {
+      "candidates_total": 13,
+      "accepted_unique": 8,
+      "rejected": 0
+    },
+    "scope_checks": {
+      "anchor_urls_not_in_schemes": [],
+      "scheme_urls_not_in_anchor_urls": [],
+      "note": "In Phase 0, anchors and scheme groww URLs should typically match 1:1."
+    }
+  },
+  "urls": [
+    "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+    "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+    "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+    "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+    "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+    "https://investor.sebi.gov.in/iematerial.html",
+    "https://www.amfiindia.com/investor",
+    "https://www.hdfcfund.com/investor-services/factsheets"
+  ],
+  "details": [
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "sources": [
+        "manifest.anchor_urls",
+        "schemes.groww_url"
+      ],
+      "host": "groww.in"
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "sources": [
+        "manifest.anchor_urls",
+        "schemes.groww_url"
+      ],
+      "host": "groww.in"
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "sources": [
+        "manifest.anchor_urls",
+        "schemes.groww_url"
+      ],
+      "host": "groww.in"
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "sources": [
+        "manifest.anchor_urls",
+        "schemes.groww_url"
+      ],
+      "host": "groww.in"
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "sources": [
+        "manifest.anchor_urls",
+        "schemes.groww_url"
+      ],
+      "host": "groww.in"
+    },
+    {
+      "url": "https://investor.sebi.gov.in/iematerial.html",
+      "sources": [
+        "manifest.backlog_official_urls_to_add"
+      ],
+      "host": "investor.sebi.gov.in"
+    },
+    {
+      "url": "https://www.amfiindia.com/investor",
+      "sources": [
+        "manifest.backlog_official_urls_to_add"
+      ],
+      "host": "www.amfiindia.com"
+    },
+    {
+      "url": "https://www.hdfcfund.com/investor-services/factsheets",
+      "sources": [
+        "manifest.backlog_official_urls_to_add"
+      ],
+      "host": "www.hdfcfund.com"
+    }
+  ]
+}

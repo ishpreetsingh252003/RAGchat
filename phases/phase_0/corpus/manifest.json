@@ -1,0 +1,66 @@
+{
+  "project": {
+    "name": "Mutual Fund FAQ Assistant (Facts-Only)",
+    "reference_context": "Groww (reference product context only)",
+    "created_at": "2026-05-03",
+    "version": "0.1.0"
+  },
+  "scope": {
+    "amc": {
+      "name": "HDFC Mutual Fund (HDFC AMC)"
+    },
+    "schemes_source_of_truth": "./schemes.json"
+  },
+  "corpus": {
+    "anchor_urls": [
+      "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth"
+    ],
+    "target_url_count": {
+      "min": 15,
+      "max": 25
+    },
+    "backlog_official_urls_to_add": [
+      {
+        "type": "HDFC AMC factsheets hub",
+        "url": "https://www.hdfcfund.com/investor-services/factsheets"
+      },
+      {
+        "type": "HDFC factsheet PDFs (CDN / S3 public)",
+        "url_hint": "https://files.hdfcfund.com/s3fs-public/<yyyy-mm>/HDFC%20MF%20Factsheet%20-%20<Month>%20<YYYY>.pdf"
+      },
+      {
+        "type": "AMFI investor education hub",
+        "url": "https://www.amfiindia.com/investor"
+      },
+      {
+        "type": "SEBI investor education material",
+        "url": "https://investor.sebi.gov.in/iematerial.html"
+      }
+    ]
+  },
+  "policy": {
+    "facts_only": true,
+    "no_investment_advice": true,
+    "no_performance_comparisons_or_return_calculations": true,
+    "response_constraints": {
+      "max_sentences": 3,
+      "exactly_one_citation_link": true,
+      "footer_format": "Last updated from sources: <date>"
+    },
+    "privacy": {
+      "do_not_collect_or_store": [
+        "PAN",
+        "Aadhaar",
+        "account numbers",
+        "OTPs",
+        "email addresses",
+        "phone numbers"
+      ]
+    }
+  }
+}
+

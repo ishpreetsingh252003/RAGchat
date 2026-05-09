@@ -1,0 +1,789 @@
+{
+  "generated_at": "2026-05-09T10:33:01+00:00",
+  "inputs": {
+    "normalization_report": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalization_report.json",
+    "snapshot_index": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.2\\output\\snapshot_index.json",
+    "parse_report": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.3\\output\\parse_report.json",
+    "schemes": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_0\\corpus\\schemes.json",
+    "manifest": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_0\\corpus\\manifest.json"
+  },
+  "chunking": {
+    "target_chars": 900,
+    "overlap_chars": 150,
+    "section_split_marker": "## <label>"
+  },
+  "documents": [
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "url_id": "b5ddfac419d1bd80eb5ccfa4",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601",
+      "normalized_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalized\\b5ddfac419d1bd80eb5ccfa4.txt",
+      "normalized_chars": 4896
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "url_id": "2582725fc091dfbcf708ea93",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13",
+      "normalized_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalized\\2582725fc091dfbcf708ea93.txt",
+      "normalized_chars": 7854
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "url_id": "8273f9c8d9b86569206eb0f9",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f",
+      "normalized_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalized\\8273f9c8d9b86569206eb0f9.txt",
+      "normalized_chars": 6614
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "url_id": "eb012e88a1ea9416b3f49103",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3",
+      "normalized_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalized\\eb012e88a1ea9416b3f49103.txt",
+      "normalized_chars": 5053
+    },
+    {
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "url_id": "26c6518ff8f98713189d452a",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591",
+      "normalized_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalized\\26c6518ff8f98713189d452a.txt",
+      "normalized_chars": 4832
+    },
+    {
+      "url": "https://investor.sebi.gov.in/iematerial.html",
+      "url_id": "52879f31f8d17d56bcb1e643",
+      "scheme_id": null,
+      "document_type": "html",
+      "fetched_at_utc": "2026-05-09T10:32:13+00:00",
+      "content_hash_sha256": "091ae2a3af292b764a92d5373a90fc08d1e9bd3a4110dfeb4ff322afac2cb5df",
+      "normalized_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalized\\52879f31f8d17d56bcb1e643.txt",
+      "normalized_chars": 2501
+    },
+    {
+      "url": "https://www.amfiindia.com/investor",
+      "url_id": "0cb0743d2fa8183888165408",
+      "scheme_id": null,
+      "document_type": "html",
+      "fetched_at_utc": "2026-05-09T10:32:14+00:00",
+      "content_hash_sha256": "7054622d53cf89ce24a56910e6511d2899ea61f23f7bea1b74f0d1574202bde4",
+      "normalized_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalized\\0cb0743d2fa8183888165408.txt",
+      "normalized_chars": 1201
+    },
+    {
+      "url": "https://www.hdfcfund.com/investor-services/factsheets",
+      "url_id": "73483eb8e94e5ec44b73c00e",
+      "scheme_id": null,
+      "document_type": "html",
+      "fetched_at_utc": "2026-05-09T10:32:15+00:00",
+      "content_hash_sha256": "1100a6dd89c2f2e87d0010d7e9dd4a3cacdd5d57d4d3ca293619dc2f82027ef5",
+      "normalized_path": "C:\\Users\\Dell\\RAG Chatbot\\phases\\phase_1\\ingestion\\subphase-1.4\\output\\normalized\\73483eb8e94e5ec44b73c00e.txt",
+      "normalized_chars": 1921
+    }
+  ],
+  "chunks": {
+    "b5ddfac419d1bd80eb5ccfa4_0000": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 394,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0001": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 619,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0002": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 0,
+      "end_char": 265,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0003": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 57,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0004": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 70,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0005": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 55,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0006": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 71,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0007": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 404,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0008": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0009": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 750,
+      "end_char": 1070,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0010": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 79,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0011": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0012": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1125,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0013": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 58,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "b5ddfac419d1bd80eb5ccfa4_0014": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "scheme_id": "hdfc_elss_tax_saver_direct_growth",
+      "document_type": "html",
+      "section": "Minimum SIP",
+      "start_char": 0,
+      "end_char": 304,
+      "fetched_at_utc": "2026-05-09T10:32:09+00:00",
+      "content_hash_sha256": "fd9d69b51fc23245d280ed661cfbfcf5591b8ddd113ab750a850692329fa7601"
+    },
+    "2582725fc091dfbcf708ea93_0000": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "root",
+      "start_char": 0,
+      "end_char": 60,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0001": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0002": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1650,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0003": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 1500,
+      "end_char": 2400,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0004": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 2250,
+      "end_char": 3150,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0005": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 3000,
+      "end_char": 3900,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0006": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 3750,
+      "end_char": 4068,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0007": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0008": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 750,
+      "end_char": 1617,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0009": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 79,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0010": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0011": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1615,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "2582725fc091dfbcf708ea93_0012": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "scheme_id": "hdfc_equity_direct_growth",
+      "document_type": "html",
+      "section": "Minimum SIP",
+      "start_char": 0,
+      "end_char": 344,
+      "fetched_at_utc": "2026-05-09T10:32:10+00:00",
+      "content_hash_sha256": "9509f380d07424018f9221b2d50a0c87148d25cb748034c26a8aeb48315a4c13"
+    },
+    "8273f9c8d9b86569206eb0f9_0000": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "root",
+      "start_char": 0,
+      "end_char": 58,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0001": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0002": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1650,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0003": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 1500,
+      "end_char": 2400,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0004": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 2250,
+      "end_char": 2526,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0005": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0006": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 750,
+      "end_char": 1650,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0007": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 1500,
+      "end_char": 1921,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0008": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 79,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0009": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0010": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1613,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "8273f9c8d9b86569206eb0f9_0011": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "scheme_id": "hdfc_focused_direct_growth",
+      "document_type": "html",
+      "section": "Minimum SIP",
+      "start_char": 0,
+      "end_char": 346,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "667d6af9a31cea0bdd9dfb791fe6caa3ff113746a5c3425cddb3513d9405b41f"
+    },
+    "eb012e88a1ea9416b3f49103_0000": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "root",
+      "start_char": 0,
+      "end_char": 60,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0001": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0002": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1075,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0003": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0004": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 750,
+      "end_char": 1650,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0005": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 1500,
+      "end_char": 2268,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0006": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 79,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0007": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0008": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1179,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "eb012e88a1ea9416b3f49103_0009": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "scheme_id": "hdfc_large_cap_direct_growth",
+      "document_type": "html",
+      "section": "Minimum SIP",
+      "start_char": 0,
+      "end_char": 321,
+      "fetched_at_utc": "2026-05-09T10:32:11+00:00",
+      "content_hash_sha256": "f39faa385b7ba0b7427c4bad210fd846fd282161dce9909b7268a3739427f7f3"
+    },
+    "26c6518ff8f98713189d452a_0000": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "root",
+      "start_char": 0,
+      "end_char": 56,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0001": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0002": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1067,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0003": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0004": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 750,
+      "end_char": 1650,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0005": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "Exit Load",
+      "start_char": 1500,
+      "end_char": 2055,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0006": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "ELSS",
+      "start_char": 0,
+      "end_char": 79,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0007": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0008": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 750,
+      "end_char": 1177,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "26c6518ff8f98713189d452a_0009": {
+      "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_id": "hdfc_mid_cap_direct_growth",
+      "document_type": "html",
+      "section": "Minimum SIP",
+      "start_char": 0,
+      "end_char": 327,
+      "fetched_at_utc": "2026-05-09T10:32:12+00:00",
+      "content_hash_sha256": "b35f8bc4c3506881870d0c955a3b26f750ae75b6c83ab5964fa8a0259d111591"
+    },
+    "52879f31f8d17d56bcb1e643_0000": {
+      "source_url": "https://investor.sebi.gov.in/iematerial.html",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "root",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:13+00:00",
+      "content_hash_sha256": "091ae2a3af292b764a92d5373a90fc08d1e9bd3a4110dfeb4ff322afac2cb5df"
+    },
+    "52879f31f8d17d56bcb1e643_0001": {
+      "source_url": "https://investor.sebi.gov.in/iematerial.html",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "root",
+      "start_char": 750,
+      "end_char": 1650,
+      "fetched_at_utc": "2026-05-09T10:32:13+00:00",
+      "content_hash_sha256": "091ae2a3af292b764a92d5373a90fc08d1e9bd3a4110dfeb4ff322afac2cb5df"
+    },
+    "52879f31f8d17d56bcb1e643_0002": {
+      "source_url": "https://investor.sebi.gov.in/iematerial.html",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "root",
+      "start_char": 1500,
+      "end_char": 2400,
+      "fetched_at_utc": "2026-05-09T10:32:13+00:00",
+      "content_hash_sha256": "091ae2a3af292b764a92d5373a90fc08d1e9bd3a4110dfeb4ff322afac2cb5df"
+    },
+    "52879f31f8d17d56bcb1e643_0003": {
+      "source_url": "https://investor.sebi.gov.in/iematerial.html",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "root",
+      "start_char": 2250,
+      "end_char": 2501,
+      "fetched_at_utc": "2026-05-09T10:32:13+00:00",
+      "content_hash_sha256": "091ae2a3af292b764a92d5373a90fc08d1e9bd3a4110dfeb4ff322afac2cb5df"
+    },
+    "0cb0743d2fa8183888165408_0000": {
+      "source_url": "https://www.amfiindia.com/investor",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "root",
+      "start_char": 0,
+      "end_char": 900,
+      "fetched_at_utc": "2026-05-09T10:32:14+00:00",
+      "content_hash_sha256": "7054622d53cf89ce24a56910e6511d2899ea61f23f7bea1b74f0d1574202bde4"
+    },
+    "0cb0743d2fa8183888165408_0001": {
+      "source_url": "https://www.amfiindia.com/investor",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "root",
+      "start_char": 750,
+      "end_char": 1201,
+      "fetched_at_utc": "2026-05-09T10:32:14+00:00",
+      "content_hash_sha256": "7054622d53cf89ce24a56910e6511d2899ea61f23f7bea1b74f0d1574202bde4"
+    },
+    "73483eb8e94e5ec44b73c00e_0000": {
+      "source_url": "https://www.hdfcfund.com/investor-services/factsheets",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "root",
+      "start_char": 0,
+      "end_char": 710,
+      "fetched_at_utc": "2026-05-09T10:32:15+00:00",
+      "content_hash_sha256": "1100a6dd89c2f2e87d0010d7e9dd4a3cacdd5d57d4d3ca293619dc2f82027ef5"
+    },
+    "73483eb8e94e5ec44b73c00e_0001": {
+      "source_url": "https://www.hdfcfund.com/investor-services/factsheets",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "Risk",
+      "start_char": 0,
+      "end_char": 470,
+      "fetched_at_utc": "2026-05-09T10:32:15+00:00",
+      "content_hash_sha256": "1100a6dd89c2f2e87d0010d7e9dd4a3cacdd5d57d4d3ca293619dc2f82027ef5"
+    },
+    "73483eb8e94e5ec44b73c00e_0002": {
+      "source_url": "https://www.hdfcfund.com/investor-services/factsheets",
+      "scheme_id": null,
+      "document_type": "html",
+      "section": "Expense Ratio",
+      "start_char": 0,
+      "end_char": 668,
+      "fetched_at_utc": "2026-05-09T10:32:15+00:00",
+      "content_hash_sha256": "1100a6dd89c2f2e87d0010d7e9dd4a3cacdd5d57d4d3ca293619dc2f82027ef5"
+    }
+  }
+}

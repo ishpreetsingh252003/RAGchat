@@ -1,0 +1,27 @@
+{
+  "2026-05-08": {
+    "refusals": {
+      "advisory_content": 1
+    },
+    "policy_violations": {
+      "imperative_buy_sell": 1
+    },
+    "classifications": {
+      "factual": 2
+    },
+    "total_queries": 2,
+    "pii_detected": 0
+  },
+  "2026-05-09": {
+    "refusals": {
+      "ambiguous_query": 1
+    },
+    "policy_violations": {},
+    "classifications": {
+      "factual": 29,
+      "ambiguous": 1
+    },
+    "total_queries": 30,
+    "pii_detected": 0
+  }
+}
